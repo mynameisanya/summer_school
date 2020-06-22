@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define N 5
-#define M 5
+#define N 3
+#define M 3
 
 int main()
 {
