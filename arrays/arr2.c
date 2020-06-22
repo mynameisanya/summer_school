@@ -17,10 +17,9 @@ int main()
 				
 				if (i+j >= M-1)
 				{
-
 				arr[i][j] = 1;
 				printf("%d", arr[i][j]);
-			}
+				}
 				else 
 				{
 					arr[i][j] = 0;
