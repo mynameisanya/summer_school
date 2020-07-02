@@ -1,20 +1,21 @@
-#Makefile for calc
-
-EXECUTABLE_FILES := calc
-SOURCE_FILES := calc.c
-CC := gcc
+BIN := calc
+SOURCE := calc.c
+HEADERS := calc_sum.h calc_sub.h calc_multi.h calc_division.h
 .PHONY := clean
-CLEAN_COMMAND := rm -rf
 
 
+$(BIN): $(SOURCE)
+		gcc -o $(BIN) $(SOURCE)
 
-
-
-$(EXECUTABLE_FILES):$(SOURCE_FILES)
-		$(CC) -o $@ $^
-
+$(BIN): $(HEADERS)
 
 $(.PHONY):
-		$(CLEAN_COMMAND) $(EXECUTABLE_FILES)
+		rm -rf $(BIN)
+
+
+
+
+
+
 
 
